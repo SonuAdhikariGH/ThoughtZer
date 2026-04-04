@@ -47,7 +47,7 @@ body {
 
 /* main container, author name and thought */
 .main-container {
-  /* auto issecret sauce for centering the box */
+  /* auto is secret sauce for centering the box */
   margin: 32px auto;
   display: grid;
   padding: 32px;
@@ -93,6 +93,7 @@ body {
     border-radius: 12px;
     background-color: #aeb784;
     border: solid 2px #41431b;
+    cursor: pointer;
   }
 }
 
@@ -102,4 +103,65 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+}
+
+/* extras container */
+.extras-container {
+  margin: 24px;
+}
+/* version history button */
+.version-history {
+  text-decoration: none;
+  color: black;
+  background-color: #d99a8b;
+  padding: 8px;
+  border-radius: 32px;
+  border: 2px solid #3f2b27;
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+}
+/* version history hover */
+.version-history:hover {
+  background-color: #e57356;
+}
+
+/* pre quote text */
+#preQuoteText {
+  font-size: 4rem;
+  font-weight: 800;
+  opacity: 0.2;
+  cursor: pointer;
+}
+.saveQuoteBtn {
+  padding: 6px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  background-color: #b78484;
+  border: solid 2px #431b1b;
+  cursor: pointer;
+}
+
+/* saved thoughts list and container */
+.savedThoughts-Container {
+  display: grid;
+  justify-content: center;
+  max-width: 600px;
+  padding: 32px;
+  align-items: center;
+  margin: 40px auto;
+  border-radius: 16px;
+  place-items: center;
+  width: 90%;
+  background-color: #e3dbbb;
+
+  /* skeletone styling */
+  #preSkeleton {
+    font-size: 4rem;
+    font-weight: 800;
+    opacity: 0.2;
+  }
+}
+/* quote list */
+quoteLi {
+  list-style: none;
 }

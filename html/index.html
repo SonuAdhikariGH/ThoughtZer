@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="/CSS/app.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,12 @@
     <title>ThoughtZer</title>
   </head>
   <body>
+    <!-- extras, like version history and infos -->
+    <div class="extras-container">
+      <a href="/html/version-history.html" class="version-history"
+        >Version History</a
+      >
+    </div>
     <h1 class="heading-brand">Generate thought</h1>
     <!-- main element -->
     <div class="serverStat-container">
@@ -21,19 +27,30 @@
     </div>
 
     <div class="main-container">
+      <!-- pre quote button -->
+      <p id="preQuoteText">Nothing's Here !</p>
       <p id="thoughtMain"></p>
       <p id="authorName"></p>
     </div>
 
     <!-- button -->
-    <div class="Btn-container">
+    <div id="btnContainer" class="Btn-container">
       <p class="btn-instruction">
         Press this button to generate a thought.. 🚀
       </p>
       <button id="generateThoughtBtn">Generate</button>
     </div>
 
+    <!-- saved thoughts list -->
+    <div class="savedThoughts-Container">
+      <!-- skeletone pre save -->
+      <p id="preSkeleton">No Saved Items</p>
+
+      <!-- list of saved quotes -->
+      <ul id="quoteLi"></ul>
+    </div>
+
     <span class="copyright">©️ All copyrights reserved by Sanu Adhikari</span>
   </body>
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </html>
